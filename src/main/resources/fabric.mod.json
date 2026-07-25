@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "better-fire-resistance",
+	"version": "${version}",
+	"name": "better fire resistance",
+	"description": "Removes fire overlay when you have fire resistance",
+	"authors": [
+		"Igrova"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/better-fire-resistance/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"igrova.better.fire.resistance.BetterFireResistance"
+		]
+	},
+	"mixins": [
+		"better-fire-resistance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

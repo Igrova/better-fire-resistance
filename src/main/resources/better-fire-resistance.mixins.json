@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "igrova.better.fire.resistance.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"FireOverlayMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
