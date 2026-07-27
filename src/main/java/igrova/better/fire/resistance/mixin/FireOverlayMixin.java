@@ -20,6 +20,8 @@ public class FireOverlayMixin {
             at = @At("HEAD"),
             cancellable = true
     )
+
+    
     private static void onRenderFireOverlay(
             MatrixStack matrices,
             VertexConsumerProvider vertexConsumers,
@@ -27,7 +29,7 @@ public class FireOverlayMixin {
             CallbackInfo ci
     ) {
         MinecraftClient client = MinecraftClient.getInstance();
-
+// есть ли огнестойка
         if (client.player != null && client.player.hasStatusEffect(StatusEffects.FIRE_RESISTANCE)) {
             ci.cancel();
         }
